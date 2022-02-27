@@ -4,7 +4,7 @@
 This is the docs and script reference for Godot plugin [ArcadeCar](https://github.com/iuripugliero/godot_arcade_car).
 
 **_Important note_**
-Due to Godot editor export limitations the class uses *tool* mode. For this, it's methods should be executed on an *ArcadeController* extension. Click [here]() for more info.
+Due to Godot editor export limitations the class uses *tool* mode. For this, it's methods should be executed on an *ArcadeController* extension. Click [here]() for more details.
 
 ## Properties
 
