@@ -8,9 +8,7 @@ This plugin can be viewed working on [YouTube](https://www.youtube.com/watch?v=w
 ## What does it really do?
 The plugin internally run a method wich returns the rotation the actual vehicle speed represents in a scale from 1/10 to 1/1 of parameter **redline_rotation**. The speed scale values are user inputed on each gear (meaning that **x** speed are in different rotations for different gears). This way power are delivered to the car in a smooth way. After reaching up it's peak power (delivered on car **core_rotation**), it will start to descend until reaching **redline_rotation**. The speed and amplitude of this acend and descend is relative to gear's **ratio** property (lower gears **wich have higher ratios** descend faster and greater).
 Below, take a look at how the power should rise with different gears:
-![Image](https://github.com/iuripugliero/godot_arcade_car/blob/main/power_graphs.png)
-
-Please, note that for sake of easing my plots, all powers rise from 0 on the image. On the actual plugin, it rises with different initial powers to gears. This also helps the car wins inertia.
+![Image](https://github.com/iuripugliero/godot_arcade_car/blob/main/power_graph.png)
 
 ## Docs
 [See Here](https://github.com/iuripugliero/godot_arcade_car/blob/main/DOC.md)
