@@ -17,7 +17,7 @@ This is the docs and script reference for Godot plugin [ArcadeCar](https://githu
 
 *resource* **gearbox** - Gearbox resorce object.
 
-
+##
 
 ![ArcadeWheelIcon](https://github.com/iuripugliero/godot_arcade_car/blob/main/addons/arcade_car/arcade_wheel_icon.png)   **ArcadeWheel**
 
@@ -27,7 +27,7 @@ This is the docs and script reference for Godot plugin [ArcadeCar](https://githu
 
 *bool* **rear_wheel** - If true, Ackermann's geometry will consider it rear. Only one rear wheel need this flag, since it uses the wheel axis.
 
-
+##
 
 ![ArcadeGearboxIcon](https://github.com/iuripugliero/godot_arcade_car/blob/main/addons/arcade_car/arcade_gearbox_icon.png)   **ArcadeGearbox**
 
@@ -35,7 +35,7 @@ This is the docs and script reference for Godot plugin [ArcadeCar](https://githu
 
 *array* **gears** - An array containing all the gears resources.
 
-
+##
 
 ![ArcadeGearIcon](https://github.com/iuripugliero/godot_arcade_car/blob/main/addons/arcade_car/arcade_gear_icon.png)   **ArcadeGear**
 
