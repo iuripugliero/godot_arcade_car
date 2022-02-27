@@ -1,0 +1,33 @@
+[gd_resource type="Resource" load_steps=7 format=2]
+
+[ext_resource path="res://addons/bullet_car/ArcadeGearbox.gd" type="Script" id=1]
+[ext_resource path="res://addons/bullet_car/ArcadeGear.gd" type="Script" id=2]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+id = -1
+max_power = 700.0
+min_power = 400.0
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 2 )
+id = 0
+max_power = 0.0
+min_power = 0.0
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 2 )
+id = 1
+max_power = 700.0
+min_power = 400.0
+
+[sub_resource type="Resource" id=4]
+script = ExtResource( 2 )
+id = 2
+max_power = 700.0
+min_power = 650.0
+
+[resource]
+script = ExtResource( 1 )
+use_curve = false
+Gears = [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ]

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/bullet_car/ArcadeGear.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+id = 0
+ratio = 0.0
+minimum_speed = 0.0
+top_speed = 0.0
+reverse = false
