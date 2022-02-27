@@ -3,6 +3,9 @@
 ## Introduction
 This is the docs and script reference for Godot plugin [ArcadeCar](https://github.com/iuripugliero/godot_arcade_car).
 
+**_Important note_**
+Due to Godot editor export limitations the class uses *tool* mode. For this, it's methods should be executed on an *ArcadeController* extension. Click [here]() for more info.
+
 ## Properties
 
 ![ArcadeCarIcon](https://github.com/iuripugliero/godot_arcade_car/blob/main/addons/arcade_car/arcade_car_icon.png)   **ArcadeCar**
@@ -50,3 +53,47 @@ This is the docs and script reference for Godot plugin [ArcadeCar](https://githu
 *bool* **neutral** - If true, accelerating in it will only rise rotation, but gets no power. *Consider using ID = 0 for neutral gear.*
 
 *bool* **reverse** - If true, accelerating in it will result in backwards movement. *Consider using ID < 0 for reverse gears.*
+
+## Methods
+
+![ArcadeControllerIcon](https://github.com/iuripugliero/godot_arcade_car/blob/main/addons/arcade_car/arcade_controller_icon.png)   **ArcadeController**
+
+*ArcadeCar* **get_arcade_car** - Return it's parent, if it is an ArcadeCar class.
+
+##
+
+![ArcadeCarIcon](https://github.com/iuripugliero/godot_arcade_car/blob/main/addons/arcade_car/arcade_car_icon.png)   **ArcadeCar**
+
+*void* **engine_accelerate**( ) - Apply force on the car based on it's gear and speed.
+
+*void* **steer_left**(*weight, delta*) - Steer car to the left, using ackermann's geometry. *weight* = 1 takes one second to fully steer and = 2 takes half second.
+
+*void* **steer_right**(*weight, delta*) - Steer car to the right, using ackermann's geometry. *weight* = 1 takes one second to fully steer and = 2 takes half second.
+
+*void* **clear_steer**(*weight, delta*) - Steer car back to forward. *weight* = 1 takes one second to fully steer and = 2 takes half second.
+
+*void* **brakes**(*maximum, weight, delta*) - Increase braking force until *maximum*.
+
+*void* **shift_up**( ) - Shift the current gear for the next one in gearbox.
+
+*void* **shift_down**( ) - Shift the current gear for the previous one in gearbox.
+
+*void* **shift_to**(*gear*) - Shift the current gear for the one with ID property equals *gear*.
+
+##
+
+![ArcadeWheelIcon](https://github.com/iuripugliero/godot_arcade_car/blob/main/addons/arcade_car/arcade_wheel_icon.png)   **ArcadeWheel**
+
+*int* **get_wheel_type**( ) - Returns 1 for left, 2 for right and 0 for rear.
+
+##
+
+![ArcadeGearboxIcon](https://github.com/iuripugliero/godot_arcade_car/blob/main/addons/arcade_car/arcade_gearbox_icon.png)   **ArcadeGearbox**
+
+*bool* **get_gearbox_type**( ) - Returns true if *automatic*.
+
+*gear* **get_gear**(*gear*) - Return the gear in array with corresponding ID.
+
+*int* **get_gear_max**( ) - Return the highest ID gear. *Note this returns it's ID and geat_gear(int) still should be call*.
+
+*int* **get_reverse_gear**( ) - Returns the ID of the first gear found with the *reverse* flag.
