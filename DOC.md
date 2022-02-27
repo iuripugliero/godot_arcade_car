@@ -92,8 +92,8 @@ Due to Godot editor export limitations the class uses *tool* mode. For this, it'
 
 *bool* **get_gearbox_type**( ) - Returns true if *automatic*.
 
-*gear* **get_gear**(*gear*) - Return the gear in array with corresponding ID.
+*gear* **get_gear**(*integer*) - Return the gear in array with corresponding ID.
 
-*int* **get_gear_max**( ) - Return the highest ID gear. *Note this returns it's ID and geat_gear(int) still should be call*.
+*int* **get_gear_max**( ) - Return the highest ID gear. *Note this returns it's ID and get_gear(int) still should be call*.
 
 *int* **get_reverse_gear**( ) - Returns the ID of the first gear found with the *reverse* flag.
