@@ -58,7 +58,7 @@ Due to Godot editor export limitations the class uses *tool* mode. For this, it'
 
 ![ArcadeControllerIcon](https://github.com/iuripugliero/godot_arcade_car/blob/main/addons/arcade_car/arcade_controller_icon.png)   **ArcadeController**
 
-*ArcadeCar* **get_arcade_car** - Return it's parent, if it is an ArcadeCar class.
+*ArcadeCar* **get_arcade_car**( ) - Return it's parent, if it is an ArcadeCar class.
 
 ##
 
