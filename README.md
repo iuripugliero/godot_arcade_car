@@ -29,7 +29,7 @@ Gears and gearboxes are resource storated, and thus fully interchangeable betwee
 
 
 ### Ackermann's angle
-For a car to steer properly, both wheels should be autonomous steered. This is because the outer wheel of a curve must cover a greater terrain (and thus spinning more). On a very very very realistic performance car simulation, it may be useful to invert ackermann's (this is done in real life on F1). But since we are not considering hot tires deforming while slipping on ground, ackermann's helps us a lot (it reduces tire slipping and this avoid speed loss or immediate stops). The image below represents the angle difference on each wheel:
+For a car to steer properly, both wheels should be autonomous steered. This is because the outer wheel of a curve must cover a greater terrain (and thus spinning more). On a very very very realistic performance car simulation, it may be useful to invert ackermann's (this is done in real life on F1). But since we are not considering hot tires deforming, ackermann's helps us a lot (it reduces tire slipping and this avoid speed loss or immediate stops). The image below represents the angle difference on each wheel:
 ![Image2](https://github.com/iuripugliero/godot_arcade_car/blob/main/ackermanns.png)
 
 Image is courtesy of [Wikipedia](https://en.wikipedia.org/wiki/Ackermann_steering_geometry)
